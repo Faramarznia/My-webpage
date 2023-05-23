@@ -4,19 +4,19 @@ import Background2 from "./assets/Background2.png";
 
 function App() {
   return (
-    <div>
+    <div className={classes.home}>
       <div className={classes.landingDiv}>
         <img src={Background} className={classes.background} alt="background" />
         <div className={classes.darkRectangle}></div>
+        <div className={classes.darkRectangle2}></div>
         <div className={classes.landing}>
           <h1>UI/UX Designer</h1>
           <h1>&</h1>
           <h1>Front-End Developer</h1>
         </div>
-        <div className={classes.darkRectangle2}></div>
         <img
           src={Background2}
-          className={classes.background}
+          className={classes.background2}
           alt="background"
         />
         <div className={classes.landingText}>
