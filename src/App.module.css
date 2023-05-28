@@ -15,7 +15,8 @@
   src: url("./assets/fonts/Poppins-Regular.ttf");
 }
 .home {
-  height: 1280px;
+  height: 1180px;
+  /* background-color: aqua; */
 }
 .landingDiv {
   position: static;
@@ -24,21 +25,6 @@
   align-items: center;
   flex-direction: column;
 }
-.darkRectangle {
-  position: absolute;
-  width: 100%;
-  height: 136px;
-  left: 0px;
-  top: 0px;
-  z-index: 1;
-  background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 0.7) 0%,
-    rgba(0, 0, 0, 0) 100%
-  );
-  transform: matrix(1, 0, 0, -1, 0, 0);
-}
-
 .background {
   position: absolute;
   width: 100%;
@@ -53,20 +39,7 @@
   left: 0px;
   top: 0px;
   z-index: 0;
-  display: inline-block;
 }
-
-/* .darkRectangle2 {
-  position: absolute;
-  width: 100%;
-  height: 368px;
-  bottom: -200px;
-  background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 0.7) 0%,
-    rgba(0, 0, 0, 0) 100%
-  );
-} */
 .landing {
   position: absolute;
   top: 230px;
@@ -130,7 +103,7 @@ h2:hover {
   background-color: rgb(0, 0, 0);
   color: #ffffff;
   clip-path: polygon(0 0, 100% 30%, 100% 100%, 0% 100%);
-  padding: 100px;
+  padding: 50px 100px;
 }
 h3 {
   font-family: "Poppins-SemiBold";

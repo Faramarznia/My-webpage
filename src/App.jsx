@@ -1,14 +1,15 @@
 import classes from "./App.module.css";
 import Background from "./assets/Background.png";
 import Background2 from "./assets/Background2.png";
+import Navbar from "./components/navbar";
 
 function App() {
   return (
     <div className={classes.home}>
+      <Navbar />
       <div className={classes.landingDiv}>
         <img src={Background} className={classes.background} alt="background" />
         <div className={classes.darkRectangle}></div>
-        <div className={classes.darkRectangle2}></div>
         <div className={classes.landing}>
           <h1>UI/UX Designer</h1>
           <h1>&</h1>
