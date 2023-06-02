@@ -2,8 +2,9 @@ import classes from "./navbar.module.css";
 
 function Navbar() {
   return (
-    <div className={classes.navbar}>
-      <svg className={classes.navicon}
+    <nav className={classes.navbar}>
+      <svg
+        className={classes.navicon}
         width="200"
         height="200"
         viewBox="0 0 200 200"
@@ -35,7 +36,7 @@ function Navbar() {
       <h5>My Project</h5>
       <h5>About Me</h5>
       <h5>Contact Us</h5>
-    </div>
+    </nav>
   );
 }
 export default Navbar;
