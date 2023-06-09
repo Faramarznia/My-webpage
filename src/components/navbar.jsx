@@ -32,10 +32,10 @@ function Navbar() {
           </linearGradient>
         </defs>
       </svg>
-      <h5>Home</h5>
-      <h5>My Project</h5>
-      <h5>About Me</h5>
-      <h5>Contact Us</h5>
+      <a href="#home">Home</a>
+      <a href="#" >My Project</a>
+      <a href="#about-me">About Me</a>
+      <a href="#">Contact Us</a>
     </nav>
   );
 }

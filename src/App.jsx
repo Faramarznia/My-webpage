@@ -1,29 +1,26 @@
 import style from "./App.css";
-import Background from "./assets/Background.png";
 import Background2 from "./assets/Background2.png";
 import Navbar from "./components/navbar";
 
 function App() {
   return (
     <>
-      <main className="home">
+      <main id="Home">
         <Navbar />
         <div className="landingDiv">
-          <img src={Background} className="background" alt="background" />
           <div className="darkRectangle"></div>
           <div className="landing">
             <h1>UI/UX Designer</h1>
             <h1>&</h1>
             <h1>Front-End Developer</h1>
           </div>
-
           <img src={Background2} className="background2" alt="background" />
           <div className="landingText">
             <h2>UI/UX Designer</h2>
             <h2>&</h2>
             <h2>Front-End Developer</h2>
           </div>
-          <h4>Hi, my name is Faramarz and Iam a freelancer</h4>
+          <h4 id="h4-header">Hi, my name is Faramarz and I am a freelancer</h4>
         </div>
         <div className="aboutMe" id="about-me">
           <h3>About Me</h3>

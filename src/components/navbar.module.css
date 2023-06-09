@@ -22,7 +22,7 @@
   height: 40px;
   margin-right: 20px;
 }
-.navbar > h5 {
+.navbar > a {
   font-family: "Poppins-Medium";
   font-style: normal;
   font-weight: 500;
@@ -30,8 +30,9 @@
   line-height: 30px;
   color: #ffffff;
   margin: 0px;
+  text-decoration: none;
 }
-.navbar > h5:hover {
+.navbar > a:hover {
   transition: 250ms;
   background: linear-gradient(254.71deg, #c21871 22.23%, #ec407a 77.34%);
   background-clip: text;
