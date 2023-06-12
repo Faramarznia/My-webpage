@@ -1,4 +1,4 @@
-import style from "./App.css";
+import "./App.css";
 import Background2 from "./assets/Background2.png";
 import Navbar from "./components/navbar";
 

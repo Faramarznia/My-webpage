@@ -42,3 +42,46 @@
   transition: 100ms;
   background-color: black;
 }
+
+
+
+.languageSelector {
+  /* Apply desired styles */
+  font-family: "Poppins-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 30px;
+  color: #ffffff;
+  margin: 0px;
+border: 0px;
+
+  background-color: #ffffff00;
+  color: #ffffff;
+  margin-left: 400px;
+}
+
+
+
+.languageSelector:focus {
+  /* Apply styles when the select tag is in focus */
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0);
+}
+
+/* Style the dropdown arrow */
+.languageSelector:after {
+  content: '\25BC';
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+/* Style the options */
+.languageSelector option {
+  /* Apply desired styles */
+  background-color: #fff;
+  color: #333;
+}

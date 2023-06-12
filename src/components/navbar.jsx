@@ -33,9 +33,13 @@ function Navbar() {
         </defs>
       </svg>
       <a href="#home">Home</a>
-      <a href="#" >My Project</a>
+      <a href="#home">My Project</a>
       <a href="#about-me">About Me</a>
-      <a href="#">Contact Us</a>
+      <a href="#home">Contact Us</a>
+      <select class={classes.languageSelector}>
+        <option value="English">English</option>
+        <option value="Farsi">Farsi</option>
+      </select>
     </nav>
   );
 }
