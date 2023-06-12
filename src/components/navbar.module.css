@@ -22,7 +22,7 @@
   height: 40px;
   margin-right: 20px;
 }
-.navbar > a {
+.navbar > * {
   font-family: "Poppins-Medium";
   font-style: normal;
   font-weight: 500;

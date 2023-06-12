@@ -72,6 +72,13 @@ function App() {
             </svg>
           </div>
         </div>
+
+        <div class="container">
+          <section class="one">one</section>
+          <section class="two">two</section>
+          <section class="three">three</section>
+          <section class="four">four</section>
+        </div>
       </main>
     </>
   );

@@ -1,4 +1,5 @@
 import classes from "./navbar.module.css";
+import { Link } from "react-scroll";
 
 function Navbar() {
   return (
@@ -32,10 +33,46 @@ function Navbar() {
           </linearGradient>
         </defs>
       </svg>
-      <a href="#home">Home</a>
-      <a href="#home">My Project</a>
-      <a href="#about-me">About Me</a>
-      <a href="#home">Contact Us</a>
+      <Link
+        activeClass="active"
+        to="home"
+        spy={true}
+        smooth={true}
+        offset={50}
+        duration={500}
+      >
+        Home
+      </Link>
+      <Link
+        activeClass="active"
+        to="home"
+        spy={true}
+        smooth={true}
+        offset={50}
+        duration={500}
+      >
+        My Project
+      </Link>
+      <Link
+        activeClass="active"
+        to="about-me"
+        spy={true}
+        smooth={true}
+        offset={50}
+        duration={500}
+      >
+        About me
+      </Link>
+      <Link
+        activeClass="active"
+        to="about-me"
+        spy={true}
+        smooth={true}
+        offset={50}
+        duration={500}
+      >
+        Contact Us
+      </Link>
       <select class={classes.languageSelector}>
         <option value="English">English</option>
         <option value="Farsi">Farsi</option>

@@ -15,10 +15,20 @@
   src: url("./assets/fonts/Poppins-Regular.ttf");
 }
 main {
+  margin: 0px;
   display: flex;
   flex-direction: column;
+ 
 }
-
+#section-one{
+  height: 200vh;
+}
+/* section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+} */
 .landingDiv {
   position: static;
   display: flex;
@@ -37,7 +47,6 @@ main {
   height: 100%;
   object-fit: cover;
   background-position: center;
-
   z-index: 0;
 }
 .landing {
@@ -102,6 +111,8 @@ h2:hover {
   color: #ffffff;
   clip-path: polygon(0 0, 100% 30%, 100% 100%, 0% 100%);
   padding: 50px 100px;
+  height: 48vh;
+  scroll-snap-type: y mandatory;
 }
 h3 {
   font-family: "Poppins-SemiBold";
@@ -235,3 +246,31 @@ p {
   }
 }
 
+
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* color: white; */
+  font-size: 100px;
+  scroll-snap-align: start;
+}
+.container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+.one {
+  background-color: aqua;
+}
+.two {
+  background-color: blanchedalmond;
+}
+.three {
+  background-color: blueviolet;
+}
+.four {
+  background-color: chartreuse;
+}
