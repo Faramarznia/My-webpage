@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <main id="Home">
-        <Navbar />
+        <Navbar navigation="Blur" />
         <div className="landingDiv">
           <div className="darkRectangle"></div>
           <div className="landing">
@@ -22,6 +22,7 @@ function App() {
           </div>
           <h4 id="h4-header">Hi, my name is Faramarz and I am a freelancer</h4>
         </div>
+
         <div className="aboutMe" id="about-me">
           <h3>About Me</h3>
           <p>
@@ -35,8 +36,8 @@ function App() {
             if you are looking for a creative, flexible, and hardworking person
             to solve your problems and advance the project, you can count on me.
           </p>
-          <div class="loader">
-            <div data-glitch="Scroll it..." class="glitch">
+          <div className="loader">
+            <div data-glitch="Scroll it..." className="glitch">
               Scroll it...
             </div>
             <svg
@@ -49,35 +50,34 @@ function App() {
               <path
                 d="M1 10.6055L5.31444 13.705L9.62889 10.6055"
                 stroke="white"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
               <path
                 d="M1 5.80293L5.31444 8.90243L9.62889 5.80293"
                 stroke="#00FFF5"
-                stroke-opacity="0.7"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeOpacity="0.7"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
               <path
                 d="M1 1L5.31444 4.0995L9.62889 1"
                 stroke="#FF0000"
-                stroke-opacity="0.4"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeOpacity="0.4"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
             </svg>
           </div>
         </div>
-
-        <div class="container">
-          <section class="one">one</section>
-          <section class="two">two</section>
-          <section class="three">three</section>
-          <section class="four">four</section>
+        <div className="container">
+          <section className="one">one</section>
+          <section className="two">two</section>
+          <section className="three">three</section>
+          <section className="four">four</section>
         </div>
       </main>
     </>

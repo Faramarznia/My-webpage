@@ -18,17 +18,7 @@ main {
   margin: 0px;
   display: flex;
   flex-direction: column;
- 
 }
-#section-one{
-  height: 200vh;
-}
-/* section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  scroll-snap-align: start;
-} */
 .landingDiv {
   position: static;
   display: flex;
@@ -37,7 +27,6 @@ main {
   flex-direction: column;
   background-image: url("./assets/Background.jpg");
   background-repeat: no-repeat;
-  background-position: top;
   background-size: cover;
 }
 
@@ -112,7 +101,6 @@ h2:hover {
   clip-path: polygon(0 0, 100% 30%, 100% 100%, 0% 100%);
   padding: 50px 100px;
   height: 48vh;
-  scroll-snap-type: y mandatory;
 }
 h3 {
   font-family: "Poppins-SemiBold";
@@ -246,17 +234,17 @@ p {
   }
 }
 
-
-
 section {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   /* color: white; */
   font-size: 100px;
   scroll-snap-align: start;
 }
+
 .container {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
