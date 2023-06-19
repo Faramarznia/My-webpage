@@ -1,12 +1,23 @@
-import classes from "./navbar.module.css";
+import { useState } from "react";
+import "./navbar.css";
 import { Link } from "react-scroll";
 
-function Navbar(navigation) {
-console.log(navigation)
+function Navbar() {
+  const [navbar, setNavbar] = useState(false);
+
+  const backgroundNavbar = () => {
+    if (window.scrollY >= 1200) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+  window.addEventListener("scroll", backgroundNavbar);
+
   return (
-    <nav className={classes.navbar}>
+    <nav className={navbar ? "navbar active" : "navbar"}>
       <svg
-        className={classes.navicon}
+        className="navicon"
         width="200"
         height="200"
         viewBox="0 0 200 200"
@@ -74,9 +85,9 @@ console.log(navigation)
       >
         Contact Us
       </Link>
-      <select className={classes.languageSelector}>
-        <option value="English">English</option>
-        <option value="Farsi">Farsi</option>
+      <select className="languageSelector">
+        <option value="English">English 🇬🇧</option>
+        <option value="Farsi">Farsi 🇮🇷</option>
       </select>
     </nav>
   );

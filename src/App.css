@@ -19,6 +19,10 @@ main {
   display: flex;
   flex-direction: column;
 }
+h1 {
+  font-size: 95px;
+}
+
 .landingDiv {
   position: static;
   display: flex;
@@ -66,7 +70,7 @@ main {
   align-items: center;
   flex-direction: column;
 }
-h1 {
+.title-one {
   display: inline-flexbox;
   font-family: "Poppins-Bold";
   font-style: normal;
@@ -76,7 +80,7 @@ h1 {
   color: #ffffff;
   margin: 10px;
 }
-h2 {
+.title-two {
   font-family: "Poppins-Bold";
   font-style: normal;
   font-weight: 700;
@@ -86,7 +90,7 @@ h2 {
   -webkit-text-fill-color: transparent;
   margin: 10px;
 }
-h2:hover {
+.title-two:hover {
   transition: 250ms;
   -webkit-text-fill-color: #ffffff;
 }
@@ -204,55 +208,100 @@ p {
   100% {
     transform: skewX(0deg);
   }
-
-  41% {
-    transform: skewX(10deg);
-  }
-
-  42% {
-    transform: skewX(-10deg);
-  }
-
-  59% {
-    transform: skewX(40deg) skewY(10deg);
-  }
-
-  60% {
-    transform: skewX(-40deg) skewY(-10deg);
-  }
-
-  63% {
-    transform: skewX(10deg) skewY(-5deg);
-  }
-
-  70% {
-    transform: skewX(-50deg) skewY(-20deg);
-  }
-
-  71% {
-    transform: skewX(10deg) skewY(-10deg);
-  }
-}
-
-section {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  /* color: white; */
-  font-size: 100px;
-  scroll-snap-align: start;
 }
 
 .container {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   height: 100vh;
+  font-size: 100px;
 }
-.one {
-  background-color: aqua;
+
+section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  scroll-snap-align: start;
 }
+.projects {
+  padding: 100px 100px;
+  justify-content: flex-start;
+}
+
+.projects > h4 {
+  font-family: "Poppins-Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.3em;
+  color: #ffffff;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.projects > h5 {
+  font-family: "Poppins-SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.3em;
+  color: #ffffff;
+  margin: 0px;
+  margin-bottom: 50px;
+}
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  gap: 48px;
+  /* padding: 100px; */
+}
+.card {
+  width: 30%;
+  height:550px;
+  padding: 12px;
+  background: #000000;
+  color: #ffffff;
+  box-shadow: 0px 0px 100px rgba(12, 124, 143, 0.5);
+  border-radius: 10px;
+  display: flex;
+  justify-content: fle;
+  align-items: center;
+  flex-direction: column;
+}
+.card > img {
+  object-fit: cover;
+  width: 100%;
+  height: 80%;
+  border-radius: 4px;
+}
+.card > h2 {
+  font-family: "Poppins-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 30px;
+  color: #ffffff;
+margin: 24px 0px;
+}
+.card:hover > img {
+  transition: 500ms ease;
+  height: 100%;
+  opacity: 55%;
+  filter: blur(2px);
+}
+.card:hover > h2 {
+  display: none;
+}
+.card:hover > svg {
+  display: none;
+}
+
 .two {
   background-color: blanchedalmond;
 }

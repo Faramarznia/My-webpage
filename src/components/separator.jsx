@@ -1,0 +1,66 @@
+function Separator() {
+  return (
+    <svg
+      width="175"
+      height="11"
+      viewBox="0 0 175 11"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <line y1="0.5" x2="175" y2="0.5" stroke="url(#paint0_linear_1772_408)" />
+      <line
+        x1="16.2036"
+        y1="5.5"
+        x2="158.796"
+        y2="5.5"
+        stroke="url(#paint1_linear_1772_408)"
+      />
+      <line
+        x1="48.6111"
+        y1="10.5"
+        x2="126.389"
+        y2="10.5"
+        stroke="url(#paint2_linear_1772_408)"
+      />
+      <defs>
+        <linearGradient
+          id="paint0_linear_1772_408"
+          x1="0"
+          y1="1.5"
+          x2="175"
+          y2="1.5"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stop-color="#1FA2FF" />
+          <stop offset="0.5" stop-color="#12D8FA" />
+          <stop offset="1" stop-color="#A6FFCB" />
+        </linearGradient>
+        <linearGradient
+          id="paint1_linear_1772_408"
+          x1="16.2036"
+          y1="6.5"
+          x2="158.796"
+          y2="6.5"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stop-color="#1FA2FF" />
+          <stop offset="0.5" stop-color="#12D8FA" />
+          <stop offset="1" stop-color="#A6FFCB" />
+        </linearGradient>
+        <linearGradient
+          id="paint2_linear_1772_408"
+          x1="48.6111"
+          y1="11.5"
+          x2="126.389"
+          y2="11.5"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stop-color="#1FA2FF" />
+          <stop offset="0.5" stop-color="#12D8FA" />
+          <stop offset="1" stop-color="#A6FFCB" />
+        </linearGradient>
+      </defs>
+    </svg>
+  );
+}
+export default Separator;

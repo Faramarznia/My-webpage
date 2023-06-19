@@ -5,7 +5,7 @@
   left: 0px;
   position: absolute;
   flex-direction: row;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   left: 0px;
   z-index: 1;
@@ -16,6 +16,11 @@
   );
   padding: 50px 100px;
   gap: 40px;
+}
+.navbar.active{
+  position: fixed;
+  background: none;
+  padding: 40px 100px;
 }
 .navicon {
   width: 40px;
@@ -38,12 +43,13 @@
   background-clip: text;
   color: transparent;
 }
+.navbar > svg{
+  padding-right: 40px;
+}
 .navbar > svg:hover {
   transition: 100ms;
   background-color: black;
 }
-
-
 
 .languageSelector {
   /* Apply desired styles */
@@ -54,14 +60,11 @@
   line-height: 30px;
   color: #ffffff;
   margin: 0px;
-border: 0px;
-
+  border: 0px;
   background-color: #ffffff00;
   color: #ffffff;
-  margin-left: 400px;
+margin-left: auto;
 }
-
-
 
 .languageSelector:focus {
   /* Apply styles when the select tag is in focus */
@@ -71,7 +74,7 @@ border: 0px;
 
 /* Style the dropdown arrow */
 .languageSelector:after {
-  content: '\25BC';
+  content: "\25BC";
   position: absolute;
   top: 50%;
   right: 10px;
@@ -85,3 +88,4 @@ border: 0px;
   background-color: #fff;
   color: #333;
 }
+

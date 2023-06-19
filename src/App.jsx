@@ -1,24 +1,26 @@
 import "./App.css";
 import Background2 from "./assets/Background2.png";
 import Navbar from "./components/navbar";
+import IMAGES from "./components/IMAGES";
+import Separator from "./components/separator";
 
 function App() {
   return (
     <>
       <main id="Home">
-        <Navbar navigation="Blur" />
+        <Navbar />
         <div className="landingDiv">
           <div className="darkRectangle"></div>
           <div className="landing">
-            <h1>UI/UX Designer</h1>
-            <h1>&</h1>
-            <h1>Front-End Developer</h1>
+            <h1 className="title-one">UI/UX Designer</h1>
+            <h1 className="title-one">&</h1>
+            <h1 className="title-one">Front-End Developer</h1>
           </div>
           <img src={Background2} className="background2" alt="background" />
           <div className="landingText">
-            <h2>UI/UX Designer</h2>
-            <h2>&</h2>
-            <h2>Front-End Developer</h2>
+            <h1 className="title-two">UI/UX Designer</h1>
+            <h1 className="title-two">&</h1>
+            <h1 className="title-two">Front-End Developer</h1>
           </div>
           <h4 id="h4-header">Hi, my name is Faramarz and I am a freelancer</h4>
         </div>
@@ -73,8 +75,21 @@ function App() {
             </svg>
           </div>
         </div>
+
         <div className="container">
-          <section className="one">one</section>
+          <section className="projects">
+            <h4>Are you looking for a ...</h4>
+            <h5>Let's take a look at my projects😊</h5>
+            <div className="cards">
+              {IMAGES.map((item) => (
+                <div className="card" key={item.id}>
+                  <img key={item.id} src={item.image} alt={item.alt} />
+                  <h2 key={item.id}>{item.title}</h2>
+                  <Separator key={item.id} />
+                </div>
+              ))}
+            </div>
+          </section>
           <section className="two">two</section>
           <section className="three">three</section>
           <section className="four">four</section>
