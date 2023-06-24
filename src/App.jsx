@@ -1,8 +1,7 @@
 import "./App.css";
 import Background2 from "./assets/Background2.png";
 import Navbar from "./components/navbar";
-import IMAGES from "./components/IMAGES";
-import Separator from "./components/separator";
+import ProjectCard from "./components/Project-Card/projectCard";
 
 function App() {
   return (
@@ -80,15 +79,7 @@ function App() {
           <section className="projects">
             <h4>Are you looking for a ...</h4>
             <h5>Let's take a look at my projects😊</h5>
-            <div className="cards">
-              {IMAGES.map((item) => (
-                <div className="card" key={item.id}>
-                  <img key={item.id} src={item.image} alt={item.alt} />
-                  <h2 key={item.id}>{item.title}</h2>
-                  <Separator key={item.id} />
-                </div>
-              ))}
-            </div>
+            <ProjectCard />
           </section>
           <section className="two">two</section>
           <section className="three">three</section>
