@@ -31,9 +31,9 @@ function Separator() {
           y2="1.5"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#1FA2FF" />
-          <stop offset="0.5" stop-color="#12D8FA" />
-          <stop offset="1" stop-color="#A6FFCB" />
+          <stop stopColor="#1FA2FF" />
+          <stop offset="0.5" stopColor="#12D8FA" />
+          <stop offset="1" stopColor="#A6FFCB" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_1772_408"
@@ -43,9 +43,9 @@ function Separator() {
           y2="6.5"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#1FA2FF" />
-          <stop offset="0.5" stop-color="#12D8FA" />
-          <stop offset="1" stop-color="#A6FFCB" />
+          <stop stopColor="#1FA2FF" />
+          <stop offset="0.5" stopColor="#12D8FA" />
+          <stop offset="1" stopColor="#A6FFCB" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_1772_408"
@@ -55,9 +55,9 @@ function Separator() {
           y2="11.5"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#1FA2FF" />
-          <stop offset="0.5" stop-color="#12D8FA" />
-          <stop offset="1" stop-color="#A6FFCB" />
+          <stop stopColor="#1FA2FF" />
+          <stop offset="0.5" stopColor="#12D8FA" />
+          <stop offset="1" stopColor="#A6FFCB" />
         </linearGradient>
       </defs>
     </svg>
