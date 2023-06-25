@@ -17,10 +17,13 @@
   padding: 50px 100px;
   gap: 40px;
 }
-.navbar.active{
+.navbar.active {
+  transition: 600ms ease-in-out;
   position: fixed;
   background: none;
-  padding: 40px 100px;
+  padding: 24px 100px ;
+  background-color: #000000ce;
+  backdrop-filter: blur(10px);
 }
 .navicon {
   width: 40px;
@@ -43,13 +46,10 @@
   background-clip: text;
   color: transparent;
 }
-.navbar > svg{
+.navbar > svg {
   padding-right: 40px;
 }
-.navbar > svg:hover {
-  transition: 100ms;
-  background-color: black;
-}
+
 
 .languageSelector {
   /* Apply desired styles */
@@ -63,7 +63,7 @@
   border: 0px;
   background-color: #ffffff00;
   color: #ffffff;
-margin-left: auto;
+  margin-left: auto;
 }
 
 .languageSelector:focus {
@@ -88,4 +88,3 @@ margin-left: auto;
   background-color: #fff;
   color: #333;
 }
-

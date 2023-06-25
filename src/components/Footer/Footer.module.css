@@ -1,0 +1,138 @@
+footer {
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.buttonLine {
+  width: 100%;
+  height: 20px;
+  background: var(--linear, linear-gradient(90deg, #2a8ce0 0%, #00b9b7 100%));
+  filter: blur(16px);
+
+}
+
+footer > p {
+  color: #fff;
+  font-size: 14px;
+  font-family: "Poppins-Medium";
+  font-weight: 500;
+  margin-top: 10px;
+}
+footer > h5 {
+  color: #fff;
+  font-size: 16px;
+  font-family: "Poppins-Regular";
+  margin: 20px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.icon {
+  display: inline-flex;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  outline: 1px solid transparent;
+  outline-color: #ffffff;
+  transition-property: outline-offset, outline-color, background-color;
+  transition-duration: 500ms;
+}
+
+.instagram:hover {
+  outline-offset: 4px;
+  outline-color: #d6249f;
+  transition: 300ms;
+  background: var(
+    --linear,
+    linear-gradient(
+      31deg,
+      #fdf497 0%,
+      #fd5949 35.38%,
+      #ec426f 46.87%,
+      #d6249f 74.66%,
+      #285aeb 100%
+    )
+  );
+}
+.gitHub:hover {
+  outline-offset: 4px;
+  outline-color: #00b9b7;
+  transition: 300ms;
+  background: var(--linear, linear-gradient(90deg, #2a8ce0 0%, #00b9b7 100%));
+}
+.linkedIn:hover {
+  outline-offset: 4px;
+  outline-color: #0077b5;
+  transition: 300ms;
+  background: #0077b5;
+}
+.dribbble:hover {
+  outline-offset: 4px;
+  outline-color: #ec407a;
+  transition: 300ms;
+  background: var(
+    --dribbble,
+    linear-gradient(218deg, #c21871 0%, #ec407a 100%)
+  );
+}
+.figma:hover {
+  outline-offset: 4px;
+  outline-color: #aa68ff;
+  transition: 300ms;
+  background: var(
+    --dribbble,
+    linear-gradient(
+      180deg,
+      #ff673c 0%,
+      #ff8779 25%,
+      #aa68ff 50%,
+      #52cdff 75%,
+      #13da8e 100%
+    )
+  );
+}
+.whatsApp:hover {
+  outline-offset: 4px;
+  outline-color: #25d366;
+  transition: 300ms;
+  background: var(
+    --dribbble,
+    linear-gradient(218deg, #075e54 0%, #128c7e 50%, #25d366 100%)
+  );
+}
+.faramarznia:hover {
+  outline-offset: 4px;
+  outline-color: #a1c4fd;
+  transition: 300ms;
+  background: var(
+    --dribbble,
+    linear-gradient(218deg, #c2e9fb 0%, #a1c4fd 100%)
+  );
+}
+
+.icon img {
+  margin: auto;
+}
+.icon:hover img {
+  animation: shake 800ms;
+}
+@keyframes shake {
+  10% {
+    transform: rotate(15deg);
+  }
+  20% {
+    transform: rotate(-15deg);
+  }
+  30% {
+    transform: rotate(15deg);
+  }
+  40% {
+    transform: rotate(-15deg);
+  }
+}

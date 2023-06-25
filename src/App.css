@@ -210,7 +210,7 @@ p {
   }
 }
 
-.container {
+/* .container {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   height: 100vh;
@@ -224,7 +224,7 @@ section {
   justify-content: center;
   flex-direction: column;
   scroll-snap-align: start;
-}
+} */
 .projects {
   padding: 100px 100px;
   justify-content: flex-start;
@@ -251,14 +251,4 @@ section {
   color: #ffffff;
   margin: 0px;
   margin-bottom: 50px;
-}
-
-.two {
-  background-color: blanchedalmond;
-}
-.three {
-  background-color: blueviolet;
-}
-.four {
-  background-color: chartreuse;
 }

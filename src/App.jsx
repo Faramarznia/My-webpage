@@ -2,6 +2,7 @@ import "./App.css";
 import Background2 from "./assets/Background2.png";
 import Navbar from "./components/Navbar/Navbar";
 import ProjectCard from "./components/Project-Card/projectCard";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -74,16 +75,8 @@ function App() {
         </div>
       </div>
 
-      <div className="container">
-        <section className="projects">
-          <h4>Are you looking for a ...</h4>
-          <h5>Let's take a look at my projects😊</h5>
-          <ProjectCard />
-        </section>
-        <section className="two">two</section>
-        <section className="three">three</section>
-        <section className="four">four</section>
-      </div>
+      <ProjectCard />
+      <Footer />
     </main>
   );
 }

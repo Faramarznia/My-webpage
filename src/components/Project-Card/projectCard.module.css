@@ -1,6 +1,37 @@
 a {
   text-decoration: none;
 }
+.projects {
+  padding: 100px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+}
+
+.projects > h4 {
+  font-family: "Poppins-Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.3em;
+  color: #ffffff;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.projects > h5 {
+  font-family: "Poppins-SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.3em;
+  color: #ffffff;
+  margin: 0px;
+  margin-bottom: 50px;
+}
 .cards {
   display: flex;
   align-items: center;
