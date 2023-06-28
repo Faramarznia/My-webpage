@@ -53,7 +53,6 @@ const Footer = () => {
           stroke="#939393"
         />
       </svg>
-
       <h5>Follow me on the following social networks:</h5>
       <div className={Styles.container}>
         <a

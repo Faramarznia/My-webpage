@@ -1,6 +1,6 @@
 import "./App.css";
 import Background2 from "./assets/Background2.png";
-import Navbar from "./components/Navbar/Navbar";
+import Navbar from "./components/navbar/Navbar";
 import ProjectCard from "./components/Project-Card/projectCard";
 import Footer from "./components/Footer/Footer";
 
